@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Узнайте больше о нашем косметологе — опыт, ценности и подход к красоте." />
+  <title>О нас — BeautyCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffafc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    main {
+      flex: 1;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 1s ease-out both;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+    <header class="bg-pink-100 p-6 shadow-md fixed w-full z-50 top-0 left-0">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-3xl font-bold tracking-tight">BeautyCare</h1>
+          <button class="md:hidden text-3xl" onclick="document.getElementById('nav-menu').classList.toggle('hidden')">☰</button>
+          <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row md:space-x-4 text-lg absolute md:static top-full left-0 w-full md:w-auto bg-pink-100 md:bg-transparent shadow md:shadow-none z-40">
+            <a href="index.html" class="block px-6 py-2 hover:text-pink-500 transition">Главная</a>
+            <a href="about.html" class="block px-6 py-2 hover:text-pink-500 transition">О нас</a>
+            <a href="services.html" class="block px-6 py-2 text-pink-600 font-semibold">Услуги</a>
+            <a href="contact.html" class="block px-6 py-2 hover:text-pink-500 transition">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+  <!-- Main -->
+  <main class="bg-gradient-to-b from-pink-50 to-white py-20 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 fade-in">
+      <div class="md:w-1/2">
+        <img src="images/косметолог.png" alt="Косметолог BeautyCare" class="rounded-xl shadow-lg w-full object-cover">
+      </div>
+      <div class="md:w-1/2 text-gray-700">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Добро пожаловать в BeautyCare</h2>
+        <p class="mb-4 leading-relaxed">
+          Меня зовут Анастасия, я дипломированный косметолог с более чем 5-летним опытом. 
+          Моя цель — помочь вам обрести уверенность через заботу о коже. 
+          Я верю, что красивая кожа начинается с любви к себе и правильного подхода к уходу.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Я использую только сертифицированную косметику и современные методы, 
+          сочетая науку и заботу. Каждый клиент — это индивидуальный подход, честность и результат.
+        </p>
+        <blockquote class="italic text-pink-600 border-l-4 border-pink-400 pl-4">
+          «Красота — это здоровье, уверенность и внимание к себе. Я здесь, чтобы помочь вам это раскрыть.»
+        </blockquote>
+        <p class="mt-6 italic text-sm text-gray-500">— Анастасия, основатель и косметолог</p>
+      </div>
+    </div>
+
+    <!-- Цифры-доверие -->
+    <div class="max-w-4xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-3 gap-10 text-center fade-in">
+      <div>
+        <h4 class="text-3xl font-bold text-pink-600">5+</h4>
+        <p class="text-sm text-gray-600">Лет опыта</p>
+      </div>
+      <div>
+        <h4 class="text-3xl font-bold text-pink-600">1000+</h4>
+        <p class="text-sm text-gray-600">Довольных клиентов</p>
+      </div>
+      <div>
+        <h4 class="text-3xl font-bold text-pink-600">98%</h4>
+        <p class="text-sm text-gray-600">Повторных обращений</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="bg-pink-50 py-16 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto text-center fade-in">
+      <h3 class="text-3xl font-semibold mb-10">Отзывы наших клиентов</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-left">
+          <p class="text-gray-600 mb-4">“Очень благодарна за профессиональный подход. Кожа сияет, чувствую себя моложе!”</p>
+          <p class="font-semibold text-pink-600">— Елена, 34 года</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-left">
+          <p class="text-gray-600 mb-4">“Мягкая атмосфера, забота и действительно видимый результат. Рекомендую!”</p>
+          <p class="font-semibold text-pink-600">— Алия, 28 лет</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-left">
+          <p class="text-gray-600 mb-4">“Первый раз — и сразу эффект. Настоящий профессионал. Я вернусь!”</p>
+          <p class="font-semibold text-pink-600">— Мария, 40 лет</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-white py-16 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto text-center fade-in">
+      <h3 class="text-3xl font-semibold mb-10">Сертификаты и обучение</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <img src="images/сертификат1.png" alt="Сертификат 1" class="rounded-lg shadow-lg">
+        <img src="images/сертификат2.png "alt="Сертификат 2" class="rounded-lg shadow-lg">
+        <img src="images/сертификат 3.png" alt="Сертификат 3" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-pink-100 text-center p-6 text-sm text-gray-600 mt-auto">
+    &copy; <span id="year"></span> Сделано Оразгали Нургалиевым. Все права защищены.
+  </footer>
+
+  <section class="bg-gray-100 py-12 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto text-center text-gray-600 text-sm">
+      <p class="mb-2">⚠️ <strong>Важно:</strong> Этот сайт является демонстрационным проектом, созданным в учебных целях.</p>
+      <p>Вся информация, фотографии и сертификаты являются вымышленными. Косметолог Анастасия — персонаж, созданный для примера.</p>
+      <p class="mt-4 text-gray-500">Сайт разработан Нургалиевым Оразгали для демонстрации навыков веб-дизайна и адаптивной вёрстки.</p>
+    </div>
+  </section>
+  
+  <!-- Автогод -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
